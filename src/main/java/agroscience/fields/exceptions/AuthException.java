@@ -7,10 +7,12 @@ import lombok.Setter;
 @Setter
 public class AuthException extends RuntimeException {
 
-  private final String message;
-
   public AuthException(String message) {
-    this.message = message;
+    super(message);
+  }
+
+  public AuthException(String message, Throwable cause) {
+    super(message, cause);
   }
 
 }

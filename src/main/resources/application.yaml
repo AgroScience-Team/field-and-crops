@@ -18,6 +18,9 @@ spring:
     drop_first: false
     change-log: classpath:db/changelog/db.changelog-master.yaml
     default-schema: ${POSTGRES_SCHEMA:public}
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
 meteo:
   port: ${METEO_PORT}
   host: ${METEO_HOST}

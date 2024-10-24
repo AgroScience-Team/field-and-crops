@@ -37,6 +37,7 @@
     <containers.version>1.19.1</containers.version>
     <checkstyle.version>3.2.1</checkstyle.version>
     <puppycrawl.tools.checkstyle.version>10.3.1</puppycrawl.tools.checkstyle.version>
+    <modelmapper.version>3.2.1</modelmapper.version>
   </properties>
 
 
@@ -57,6 +58,11 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
     </dependency>
 
     <dependency>
@@ -134,6 +140,12 @@
       <artifactId>junit-jupiter</artifactId>
       <version>${containers.version}</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.modelmapper</groupId>
+      <artifactId>modelmapper</artifactId>
+      <version>${modelmapper.version}</version>
     </dependency>
 
   </dependencies>

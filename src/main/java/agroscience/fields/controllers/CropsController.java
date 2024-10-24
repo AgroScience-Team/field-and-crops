@@ -7,6 +7,7 @@ import agroscience.fields.security.AuthoriseService;
 import agroscience.fields.security.Role;
 import agroscience.fields.services.CropsService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirements;
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(path = "api/v1/fields")
+@SecurityRequirements
+@Deprecated
 public class CropsController {
 
   private final CropsService cropsService;
